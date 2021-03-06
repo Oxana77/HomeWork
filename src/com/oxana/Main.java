@@ -30,7 +30,6 @@ public class Main {
     }
 
     public static void OutClosestTenValue(double n, double m){
-        DecimalFormat decimalFormat = new DecimalFormat( "#.###" );
         MathContext context = new MathContext(8, RoundingMode.HALF_UP);
         BigDecimal mDistance = new BigDecimal(abs(m - 10)).round(context);
         BigDecimal nDistance = new BigDecimal(abs(n - 10)).round(context);
